@@ -34,7 +34,7 @@ my_data_rows = my_data_rows.set_index('FRUIT_NAME');
 # Let's put a pick list here so they can pick the fruit they want to include 
 # streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 # fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_data_rows))
-fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_data_rows.index),['Avocado','Strawberries'])
+fruits_selected = streamlit.multiselect("Pick some fruits:", my_data_rows,['Avocado','Strawberries'])
 streamlit.stop();
 
 # Filter on selected
