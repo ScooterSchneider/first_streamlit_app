@@ -29,12 +29,12 @@ my_data_rows = my_cur.fetchall()
 
 # my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt");
 # my_fruit_list = my_fruit_list.set_index('Fruit')
-
+my_data_rows = my_data_rows.set_index('FRUIT_NAME');
 
 # Let's put a pick list here so they can pick the fruit they want to include 
 # streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
-fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_data_rows))
-# fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_data_rows),['Avocado','Strawberries'])
+# fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_data_rows))
+fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_data_rows.index),['Avocado','Strawberries'])
 streamlit.stop();
 
 # Filter on selected
