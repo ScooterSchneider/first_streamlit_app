@@ -2,17 +2,16 @@
 import streamlit;
 import pandas;
 import requests;
-# import snowflake.connector;
-
+import snowflake.connector;
 from urllib.error import URLError;
 
 # HEADER AREA
 streamlit.title('My Parent new Healthy Diner');
-streamlit.header('Breakfast Menu');
-streamlit.text('🥣 Healthy Oatmeal');
-streamlit.text('🥗 Chewey Kale - So Gross');
-streamlit.text('🐔 Hard Boiled Chicken Poop, Eggs');
-streamlit.text('🥑🍞 Avacado Toast');
+# streamlit.header('Breakfast Menu');ls
+# streamlit.text('🥣 Healthy Oatmeal');
+# streamlit.text('🥗 Chewey Kale - So Gross');
+# streamlit.text('🐔 Hard Boiled Chicken Poop, Eggs');
+# streamlit.text('🥑🍞 Avacado Toast');
 
 #  BUILD YOUR OWN
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
